@@ -2,6 +2,9 @@
 
 This project builds a configuration-driven data pipeline that ingests healthcare eligibility files from multiple partners. Since each partner sends data in a different format, the pipeline standardizes all incoming data into a single, unified structure that can be easily used by downstream systems.
 
+## Project Structure
+
+```text
 Healthcare_Eligibility_Pipeline/
 │
 ├── acme.txt                  # Acme Health source file
@@ -11,6 +14,7 @@ Healthcare_Eligibility_Pipeline/
 ├── output.py                 # Pipeline entry point
 ├── Merged_data_output.csv    # Final unified output
 └── README.md                 # Project documentation
+
 
 To run the pipeline
 Make sure Python 3 and pandas are installed.
