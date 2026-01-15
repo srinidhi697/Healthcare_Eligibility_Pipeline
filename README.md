@@ -15,38 +15,23 @@ Healthcare_Eligibility_Pipeline/
 ├── Merged_data_output.csv    # Final unified output
 └── README.md                 # Project documentation
 
-
-To Run the Pipeline
-
+```md
+## To Run the Pipeline
 Make sure Python 3 and the pandas library are installed.
-
 Place the partner input files (acme.txt, bettercare.csv) in the project directory.
-
 Run the pipeline using the command below:
-
 python output.py
-
-
 The pipeline will generate a unified output file named Merged_data_output.csv.
 
-Adding a New Partner
-
+##Adding a New Partner
 Add a new entry to PARTNER_CONFIG inside config.py.
-
 Define the following for the new partner:
-
 File delimiter
-
 Column mappings
-
 Date format
-
 Partner code
-
 Place the new input file in the project directory.
-
 Call process_file() with the new partner key.
-
 No changes to the transformation or orchestration code are required.
 
 
